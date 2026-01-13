@@ -1,5 +1,6 @@
 import { DollarSign, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 interface HeaderProps {
   onToggleSidebar: () => void;
@@ -23,9 +24,7 @@ const Header = ({ onToggleSidebar, onLogoClick }: HeaderProps) => {
           onClick={onLogoClick}
           className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
         >
-          <div className="h-8 w-8 rounded-lg bg-primary/20 flex items-center justify-center">
-            <span className="text-primary font-bold text-sm">IS</span>
-          </div>
+          <img src={logo} alt="InzelSec Logo" className="h-8 w-8" />
           <span className="text-sm font-semibold gradient-text">InzelSec</span>
         </button>
       </div>
